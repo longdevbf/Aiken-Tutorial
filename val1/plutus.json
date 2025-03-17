@@ -1,0 +1,131 @@
+{
+  "preamble": {
+    "title": "long/val1",
+    "description": "Aiken contracts for project 'long/val1'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.0+be31a7c"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "val1.dedicate.spend",
+      "datum": {
+        "title": "datum_opt",
+        "schema": {
+          "$ref": "#/definitions/val1~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "compiledCode": "5903460101003232323232323225333002323232323253323300830013009375400426464646464a66601a6004601c6ea800c4c8c94ccc03ccc88c8cc00400400c894ccc058004528099299980a19b8f375c603200400829444cc00c00c004c064004dd6180a180a980a980a980a980a980a980a980a98089baa00c375c600260226ea80084c8c94ccc044cc88c94ccc050c034c054dd5000899299980a9807180b1baa300730173754600a602e6ea80104cdc4001800899b89003001375a6032602c6ea80045281801980a9baa300330153754004602c602e602e602e602e602e602e602e60266ea8038dd6980118099baa00415333011337126eb4c058c05cc05cc05cc05cc05cc04cdd50021919199800800991980080099198008009bac30063017375402444a666032002297ae0132325333018325333019300e301a3754002266e3cdd7180f180d9baa00100814a0601060346ea8c020c068dd500109980e00119802002000899802002000980e801180d80091299980c0008a5eb804cc064dd419299980b1807980b9baa0011480004dd6980d980c1baa001325333016300f30173754002298103d87a8000132330010013756603860326ea8008894ccc06c004530103d87a8000132323232533301c33722911000021533301c3371e91010000213374a9000198101ba80014bd700a6103d87a8000133006006003375a603a0066eb8c06c008c07c008c074004c8cc004004dd59804180c1baa301b00222533301a00114c103d87a8000132323232533301b33722911000021533301b3371e91010000213374a90001980f9ba60014bd700a6103d87a8000133006006003375660380066eb8c068008c078008c070004cc008008c06c0052000222533301800210011333003003301b002337006eb4c068008004dd7180198099baa00413371e6eb8c004c04cdd5180b180b980b980b980b98099baa004375c602c602e602e602e602e602e602e60266ea80105280a5023016001230153016301600114a046028602a0026024601e6ea800c594ccc030c004c034dd50038a99980798071baa00714985858dc3a4000601e6020004601c00260146ea8008dc3a40042c6016601800460140026014004601000260086ea8004526136565734aae7555cf2ab9f5740ae855d101",
+      "hash": "13190e7de76f5b276598c787ad4de1c6432c2728bfd98ea70786290f"
+    },
+    {
+      "title": "val1.dedicate.else",
+      "compiledCode": "5903460101003232323232323225333002323232323253323300830013009375400426464646464a66601a6004601c6ea800c4c8c94ccc03ccc88c8cc00400400c894ccc058004528099299980a19b8f375c603200400829444cc00c00c004c064004dd6180a180a980a980a980a980a980a980a980a98089baa00c375c600260226ea80084c8c94ccc044cc88c94ccc050c034c054dd5000899299980a9807180b1baa300730173754600a602e6ea80104cdc4001800899b89003001375a6032602c6ea80045281801980a9baa300330153754004602c602e602e602e602e602e602e602e60266ea8038dd6980118099baa00415333011337126eb4c058c05cc05cc05cc05cc05cc04cdd50021919199800800991980080099198008009bac30063017375402444a666032002297ae0132325333018325333019300e301a3754002266e3cdd7180f180d9baa00100814a0601060346ea8c020c068dd500109980e00119802002000899802002000980e801180d80091299980c0008a5eb804cc064dd419299980b1807980b9baa0011480004dd6980d980c1baa001325333016300f30173754002298103d87a8000132330010013756603860326ea8008894ccc06c004530103d87a8000132323232533301c33722911000021533301c3371e91010000213374a9000198101ba80014bd700a6103d87a8000133006006003375a603a0066eb8c06c008c07c008c074004c8cc004004dd59804180c1baa301b00222533301a00114c103d87a8000132323232533301b33722911000021533301b3371e91010000213374a90001980f9ba60014bd700a6103d87a8000133006006003375660380066eb8c068008c078008c070004cc008008c06c0052000222533301800210011333003003301b002337006eb4c068008004dd7180198099baa00413371e6eb8c004c04cdd5180b180b980b980b980b98099baa004375c602c602e602e602e602e602e602e60266ea80105280a5023016001230153016301600114a046028602a0026024601e6ea800c594ccc030c004c034dd50038a99980798071baa00714985858dc3a4000601e6020004601c00260146ea8008dc3a40042c6016601800460140026014004601000260086ea8004526136565734aae7555cf2ab9f5740ae855d101",
+      "hash": "13190e7de76f5b276598c787ad4de1c6432c2728bfd98ea70786290f"
+    }
+  ],
+  "definitions": {
+    "AssetName": {
+      "title": "AssetName",
+      "dataType": "bytes"
+    },
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "PolicyId": {
+      "title": "PolicyId",
+      "dataType": "bytes"
+    },
+    "VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "Void": {
+      "title": "Unit",
+      "anyOf": [
+        {
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "val1/Asset": {
+      "title": "Asset",
+      "anyOf": [
+        {
+          "title": "Asset",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "policy_id",
+              "$ref": "#/definitions/PolicyId"
+            },
+            {
+              "title": "token_name",
+              "$ref": "#/definitions/AssetName"
+            },
+            {
+              "title": "amt",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "val1/Datum": {
+      "title": "Datum",
+      "anyOf": [
+        {
+          "title": "Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "owner",
+              "$ref": "#/definitions/VerificationKeyHash"
+            },
+            {
+              "title": "beneficiary",
+              "$ref": "#/definitions/VerificationKeyHash"
+            },
+            {
+              "title": "lock_until",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "message",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "nft",
+              "$ref": "#/definitions/val1~1Asset"
+            },
+            {
+              "title": "locked_ada",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "plc",
+              "$ref": "#/definitions/PolicyId"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "preamble": {
+    "title": "long/mesh",
+    "description": "Aiken contracts for project 'long/mesh'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.0+be31a7c"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "mesh.hello_world.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/mesh~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/mesh~1Redeemer"
+        }
+      },
+      "compiledCode": "59010001010032323232323225333002323232323253330073370e900118041baa0011323232533300a3370e900018059baa00513232533300f30110021533300c3370e900018069baa003132533300d3371e6eb8c044c03cdd50042450a68656c6c6f206261627900100114a06644646600200200644a66602600229404c94ccc044cdc79bae301500200414a2266006006002602a0026eb0c040c044c044c044c044c044c044c044c044c038dd50049bae3010300e37546020601c6ea800c5858dd7180780098061baa00516300d300e002300c001300937540022c6014601600460120026012004600e00260086ea8004526136565734aae7555cf2ab9f5742ae89",
+      "hash": "dc5e92717d55c4732fde23b3514f53ba622f28b3270375bd943b3fcd"
+    },
+    {
+      "title": "mesh.hello_world.else",
+      "compiledCode": "59010001010032323232323225333002323232323253330073370e900118041baa0011323232533300a3370e900018059baa00513232533300f30110021533300c3370e900018069baa003132533300d3371e6eb8c044c03cdd50042450a68656c6c6f206261627900100114a06644646600200200644a66602600229404c94ccc044cdc79bae301500200414a2266006006002602a0026eb0c040c044c044c044c044c044c044c044c044c038dd50049bae3010300e37546020601c6ea800c5858dd7180780098061baa00516300d300e002300c001300937540022c6014601600460120026012004600e00260086ea8004526136565734aae7555cf2ab9f5742ae89",
+      "hash": "dc5e92717d55c4732fde23b3514f53ba622f28b3270375bd943b3fcd"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "mesh/Datum": {
+      "title": "Datum",
+      "anyOf": [
+        {
+          "title": "Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "owner",
+              "$ref": "#/definitions/VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "mesh/Redeemer": {
+      "title": "Redeemer",
+      "anyOf": [
+        {
+          "title": "Redeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "text",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

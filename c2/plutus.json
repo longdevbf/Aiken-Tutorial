@@ -1,0 +1,14 @@
+{
+  "preamble": {
+    "title": "long/c2",
+    "description": "Aiken contracts for project 'long/c2'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.0+be31a7c"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": []
+}

@@ -1,0 +1,22 @@
+name = "long/gift_card"
+version = "0.0.0"
+compiler = "v1.1.0"
+plutus = "v3"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'long/gift_card'"
+
+[repository]
+user = "long"
+project = "gift_card"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2.2.0"
+source = "github"
+[[dependencies]]
+name = "sidan-lab/vodka"
+version = "0.1.1-beta"
+source = "github"
+ 
+[config]
