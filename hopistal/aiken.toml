@@ -1,0 +1,22 @@
+name = "long/hopistal"
+version = "0.0.0"
+compiler = "v1.1.0"
+plutus = "v3"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'long/hopistal'"
+
+[repository]
+user = "long"
+project = "hopistal"
+platform = "github"
+[[dependencies]]
+name = "logical-mechanism/assist"
+version = "v0.5.1"
+source = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2.2.0"
+source = "github"
+
+[config]
