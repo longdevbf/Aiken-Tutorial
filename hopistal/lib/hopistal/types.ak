@@ -1,23 +1,8 @@
 use aiken/crypto.{VerificationKeyHash}
 use cardano/assets.{AssetName, PolicyId}
 use types/cip68.{CIP68}
+
 // the redeemer using mint validator
-pub type MintRedeemer {
-  Mint
-  Burn
-}
-
-// the redeemer using store validator
-pub type StoreRedeemer {
-  Update
-  Remove
-}
-
-pub const author_key: ByteArray = "_pk"
-
-
-type POSIXTime =
-  Int
 
 pub type Action {
   Lock
@@ -34,5 +19,4 @@ pub type PatientProfileDatum {
   nft_asset_name: AssetName,
   required_ada: Int,
   metadata: CIP68,
-  last_update: POSIXTime,
 }
