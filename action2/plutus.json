@@ -1,0 +1,90 @@
+{
+  "preamble": {
+    "title": "long/action2",
+    "description": "Aiken contracts for project 'long/action2'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.0+be31a7c"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "action2.action1.spend",
+      "datum": {
+        "title": "datum_otp",
+        "schema": {
+          "$ref": "#/definitions/action2~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "fee_paid",
+          "schema": {
+            "$ref": "#/definitions/Int"
+          }
+        }
+      ],
+      "compiledCode": "58fd01010032323232323223225333004323232323253330093370e900118051baa0011323232533300c3370e900018069baa0011323232533300f330013758600460226ea8028dd71809980a18089baa00314a22a66601e660026eb0c008c044dd50051bae301330113754006266e1c034dd69809980a180a18089baa00314a044646600200200644a66602a00229404c94ccc04ccdc79bae301700200414a2266006006002602e00246024602660266026602660266026602660260026020601c6ea800458c03cc040008c038004c02cdd50008b1806180680118058009805801180480098031baa00114984d958dd6800ab9a5573aaae7955cfaba15745",
+      "hash": "4882c7278e4f5d4ed20fe4a22c3c98a6cbce690157eb424098221e94"
+    },
+    {
+      "title": "action2.action1.else",
+      "parameters": [
+        {
+          "title": "fee_paid",
+          "schema": {
+            "$ref": "#/definitions/Int"
+          }
+        }
+      ],
+      "compiledCode": "58fd01010032323232323223225333004323232323253330093370e900118051baa0011323232533300c3370e900018069baa0011323232533300f330013758600460226ea8028dd71809980a18089baa00314a22a66601e660026eb0c008c044dd50051bae301330113754006266e1c034dd69809980a180a18089baa00314a044646600200200644a66602a00229404c94ccc04ccdc79bae301700200414a2266006006002602e00246024602660266026602660266026602660260026020601c6ea800458c03cc040008c038004c02cdd50008b1806180680118058009805801180480098031baa00114984d958dd6800ab9a5573aaae7955cfaba15745",
+      "hash": "4882c7278e4f5d4ed20fe4a22c3c98a6cbce690157eb424098221e94"
+    }
+  ],
+  "definitions": {
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "action2/Datum": {
+      "title": "Datum",
+      "anyOf": [
+        {
+          "title": "Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "patient",
+              "$ref": "#/definitions/VerificationKeyHash"
+            },
+            {
+              "title": "doctor",
+              "$ref": "#/definitions/VerificationKeyHash"
+            },
+            {
+              "title": "cash_required",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
